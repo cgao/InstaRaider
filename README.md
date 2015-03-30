@@ -29,12 +29,12 @@ python instaRaider.py -u USER [-c COUNT]
 To download all photos of user 'XYZ'
 ```python
 python instaRaider.py -u XYZ
-``
+```
 
 To download the most recent 20 photos of user 'XYZ'
 ```python
 python instaRaider.py -u XYZ -c 20
-``
+```
 
 
 ## License
