@@ -2,15 +2,12 @@
 """
 instaRaider.py
 
-usage: instaRaider.py [-h] -u USER [-c COUNT]
+This function contains code that is originally Copyright (c) {{{2014}}} {{{Amir Kurtovic}}}
 
-This code is a modified version of:
-https://github.com/akurtovic/InstaRaider
+This code is a modified version of: https://github.com/akurtovic/InstaRaider
 
-the original code is not working with new instagram website
-I modified it.
-Date: 03/06/2015
-@cgao
+the original code is not working well with new instagram website design
+Original modification was made on 03/06/2015
 
 """
 from bs4 import BeautifulSoup
