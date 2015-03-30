@@ -1,14 +1,7 @@
 #!/usr/bin/env python
 """
 instaRaider.py
-
 This function contains code that is originally Copyright (c) {{{2014}}} {{{Amir Kurtovic}}}
-
-This code is a modified version of: https://github.com/akurtovic/InstaRaider
-
-the original code is not working well with new instagram website design
-Original modification was made on 03/06/2015
-
 """
 from bs4 import BeautifulSoup
 import selenium.webdriver as webdriver
