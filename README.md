@@ -1,7 +1,5 @@
 ## InstaRaider
 
-instaRaider.py
-
 This function contains code that is originally Copyright (c) {{{2014}}} {{{Amir Kurtovic}}}
 
 This code is a modified version of: https://github.com/akurtovic/InstaRaider
@@ -12,7 +10,7 @@ Original modification was made on 03/06/2015
 ## Disclaimer
 This code is posted for informational purposes only. Use of Instagram is governed by the company's Terms of Use (http://instagram.com/legal/terms/). Any user content posted to Instagram is governed by the Privacy Policy (http://instagram.com/legal/privacy/). If you feel this code fails to obey the company's terms & policy or any law, contact me at gaochi0500@gmail.com
 
-If you find any bug in running the code, free feel to contact me at gaochi0500@gmail.com . I will make effect to fix it, but I cannot guarantee the fix in time. It is possible the code won't work any more if changes occur to the instagram website design.
+If you find any bug in running the code, free feel to contact me at gaochi0500@gmail.com. I will make effect to fix it, but I cannot guarantee the fix in time. It is possible the code won't work any more if changes occur to the instagram website design.
 
 ## Code Purpose
 
