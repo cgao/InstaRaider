@@ -39,6 +39,6 @@ python instaRaider.py -u XYZ -c 20
 
 ## License
 
-Copyright (c) 2014 Chi Gao with portions Copyright (c) {{{2014}}} {{{Amir Kurtovic}}}. See the LICENSE file for license rights and limitations (MIT).
+Copyright (c) 2015 Chi Gao with portions Copyright (c) {{{2014}}} {{{Amir Kurtovic}}}. See the LICENSE file for license rights and limitations (MIT).
 
 
