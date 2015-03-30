@@ -166,25 +166,17 @@ class instaRaider(object):
                 # increment photonumber for next image
                 photoNumber += 1
             
-                #extract url to thumbnail from each photo
-                ##x = x.div
-                ##rawUrl = x['style']
-                ##cgao
+                #extract url from each photo
                 rawUrl = x['src']
                 # rawUrl is the thumbnail url
                 # for photos after 2014:
                 #   I need to remove '/s306x306/e15' from it
-                # https://scontent.cdninstagram.com/hphotos-xap1/t51.2885-15/s306x306/e15/10683944_526319734180228_164050056_n.jpg
+                # https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s306x306/e15/11055946_406244246223563_666799740_n.jpg
                 # for photos before 2014?
                 #   I need to change trailing '6.jpg' to '7.jpg'
-                # https://scontent.cdninstagram.com/hphotos-xpf1/outbound-distilleryimage6/t0.0-17/OBPTH/378c229620b511e3bdd322000ae90d23_6.jpg
+                # https://scontent.cdninstagram.com/hphotos-xpa1/outbound-distilleryimage9/t0.0-17/OBPTH/7502a400c17b11e1a39b1231381b7ba1_6.jpg
                 # for some, I need to change trailing '6.jpg' to '8.jpg'
-                #https://scontent.cdninstagram.com/hphotos-xfa1/outbound-distilleryimage1/t0.0-17/OBPTH/60e6518ab40211e3b686124d53b510cd_6.jpg    
-
-                ##photoUrl = rawUrl[21:-2]
-                ##cgao
-
-                #convert from unicode to ASCII
+                #   https://scontent.cdninstagram.com/hphotos-xfa1/outbound-distilleryimage1/t0.0-17/OBPTH/60e6518ab40211e3b686124d53b510cd_6.jpg    
                 rawUrl = rawUrl.encode('utf-8')
                 if '/s306x306/e15' in rawUrl:
                     photoUrl = rawUrl.replace('/s306x306/e15','')   
@@ -197,17 +189,12 @@ class instaRaider(object):
                     print(rawUrl)
                     print(photoUrl)
                 else:
-                    #print(photoNumber, ": not valid url: ",rawUrl)
-                    #photoNumber -= 1
-                    #continue #skip current loop step.
                     print(userName + " " + str(count) + " " + str(photoNumber) + ": probably a thumbnail image: ")
                     print(rawUrl)    
                     photoUrl = rawUrl     
-                #if photoNumber < 329:
-                #    continue
+
 
                 photoName = directory + userName + "_" + str(photoNumber) + '.jpg'
-                #print(photoNumber, photoUrl)
                 # save full-resolution photo
                 urllib.urlretrieve(photoUrl, photoName)
                 
